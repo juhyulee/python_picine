@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ft-package
+Version: 0.0.1
+Summary: A sample test package
+Author: juhyulee
+Author-email: pismire0317@gmail.com
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE
