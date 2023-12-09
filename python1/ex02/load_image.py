@@ -1,12 +1,13 @@
 import array
 from PIL import Image
 
+
 def ft_load(path: str) -> array:
 	image = Image.open(path)
-	if (not image):
-		print("error wrong image")
+	if (not image) :
+ 		print("error wrong image")
 		return 0
-	print("The shape of image is: (", image.size[1], ", ",image.size[0],", ",len(image.getpixel((0,0))), ")", sep="")
+ 	print("The shape of image is: (", image.size[1], ", ",image.size[0],", ",len(image.getpixel((0,0))), ")", sep="")
 
 	arr = []
 	for i in range(0, image.size[0]):
@@ -14,4 +15,5 @@ def ft_load(path: str) -> array:
 			rgb = image.getpixel((i,j))
 			arr.append(rgb)
 	return arr
+
 print(ft_load("landscape.jpg"))
